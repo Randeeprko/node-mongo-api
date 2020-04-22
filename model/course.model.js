@@ -6,7 +6,8 @@ const schema = {
             required : [true,'Required field']
         },
         courseId: {
-            type: String
+            type: String,
+            unique: true
         },
         courseDuration: {
             type: String

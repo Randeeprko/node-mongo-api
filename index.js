@@ -9,6 +9,7 @@ const courseController = require('./controllers/courses')
 const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access')
 
 app.use(bodyparser.urlencoded({extended: true}))
+app.use(bodyparser.json())
 
 app.set('views', path.join(__dirname + '/views/'))
 
