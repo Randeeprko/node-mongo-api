@@ -1,25 +1,31 @@
-<div>
-    Courses
-</div>
-<table>
-   <thead>
-       <tr>
-           <th>ID</th>
-           <th>Name</th>
-           <th>Duration</th>
-           <th>Fee</th>
-       </tr>
-   </thead>
-   <tbody>
-       {{#each data}}
-       <tr>
-           <td>{{this.courseId}}</td>
-           <td>{{this.courseName}}</td>
-           <td>{{this.courseDuration}}</td>
-           <td>{{this.courseFee}}</td>
-       </tr>
-       {{/each}}
-   </tbody>
-
-
-</table>
+<div class ="row">
+                     <div class ="col-md-9 offset-md-2">
+                         <div class="card">
+                             <div class="card-header bg custom">
+        <h3 align="center" class="text-primary">Course Details</h3>
+                             </div>
+                             <div class = "card-body">
+                                       <table class="table table-hover table-striped">
+                                           <thead>
+                                               <tr>
+                                                   <th>Course Id</th>
+                                                   <th>Course Name</th>
+                                                   <th>Duration</th>
+                                                   <th>Course Fee</th>
+                                               </tr>
+                                           </thead>
+                                           <tbody>
+                                              {{#each data}}
+                                              <tr>
+                                              <td>{{this.courseId}}</td>
+                                              <td>{{this.courseName}}</td>
+                                              <td>{{this.courseDuration}}</td>
+                                              <td>{{this.courseFee}}</td>
+                                              </tr>
+                                              {{/each}}
+                                           </tbody>
+                                       </table>
+                             </div>
+                           </div>
+                       </div>
+                   </div>    
