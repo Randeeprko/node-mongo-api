@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@handlebars/allow-prototype-access": "^1.0.3",
+    "ansi-regex": "^6.0.1",
     "bl": "^2.2.1",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.4.1",
